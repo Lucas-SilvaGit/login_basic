@@ -1,0 +1,7 @@
+<h1>Pagina Inicial</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%= link_to destroy_user_session_path, method: :delete, data: { turbo: "false" } do %>
+    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+    Logout
+<% end  %>
