@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'inicio', to: 'welcome#index'
 
   devise_for :users
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   root to: 'welcome#index' #welcome nome do controller index a pagina para qual vai
