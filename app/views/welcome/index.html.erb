@@ -1,23 +1,6 @@
 <h1>Pagina Inicial</h1>
+
 <p>Find me in app/views/welcome/index.html.erb</p>
 
-<%= link_to 'Log-in', new_user_session_path%> 
 
-<br>
-<br>
-<%= link_to 'Sing-up', new_user_registration_path%> 
-<br>
-<br>
 
-<%= link_to 'Delete registration', cancel_user_registration_path %>
-
-<br>
-<br>
-
-<%= link_to 'account settings', edit_user_registration_path %>
-<br>
-<br>
-
-<%= link_to destroy_user_session_path, method: :delete, data: { turbo: "false" } do %>
-    Logout
-<% end  %>
