@@ -12,5 +12,22 @@
 
   <body>
     <%= yield %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <% if user_signed_in? %>
+      <%= current_user.email%>
+      <br>
+      <%= link_to destroy_user_session_path, method: :delete, data: { turbo: "false" } do %>Logout<% end  %>
+      <br>
+      <%= link_to 'Account settings', edit_user_registration_path %>
+
+    <% else %>
+      <%= link_to 'Log-in', new_user_session_path%> 
+      <br>
+      <%= link_to 'Sing-up', new_user_registration_path%> 
+
+    <% end%>
   </body>
 </html>
