@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'inicio', to: 'welcome#index'
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
+  #devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
