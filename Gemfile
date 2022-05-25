@@ -73,3 +73,5 @@ end
 
 gem "devise", "~> 4.8"
 gem "devise-i18n", "~> 0.12.1"
+gem 'omniauth'
+gem 'omniauth-facebook'
